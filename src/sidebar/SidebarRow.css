@@ -15,7 +15,24 @@
   font-size: 12px;
   font-weight: 500;
 }
+
 .sidebarRow:hover {
   cursor: pointer;
   background-color: rgb(241, 236, 236);
+}
+
+.sidebarRow:hover > .sidebarRow__icon {
+  color: red;
+}
+
+.selected > .sidebarRow__icon {
+  color: red;
+}
+
+.selected {
+  background-color: rgb(241, 236, 236);
+}
+
+.selected > .sidebarRow__title {
+  font-weight: bold;
 }

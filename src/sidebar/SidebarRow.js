@@ -1,8 +1,8 @@
 import React from "react";
 import "./SidebarRow.css";
-const SidebarRow = ({ title, Icon }) => {
+const SidebarRow = ({ title, Icon, selected }) => {
   return (
-    <div className="sidebarRow">
+    <div className={`sidebarRow ${selected && "selected"}`}>
       <Icon className="sidebarRow__icon" />
       <h4 className="sidebarRow__title">{title}</h4>
     </div>

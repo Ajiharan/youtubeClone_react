@@ -11,6 +11,7 @@
 }
 
 .header__logo {
+  cursor: pointer;
   height: 48px;
   object-fit: contain;
   margin-left: 15px;
@@ -29,7 +30,7 @@
 
 .header__input > input {
   flex: 1;
-  padding: 5px;
+
   border: none;
   outline: none;
 }
@@ -38,11 +39,15 @@
   display: flex;
   align-items: center;
 }
-.header__inputButton {
-  width: 2.3rem !important;
+/* .header__inputButton {
+} */
+.header__input a {
   background-color: rgba(241, 245, 250, 0.993);
   border-left: 1px solid lightgray;
   color: gray;
+  width: 2.1rem !important;
+
+  padding: 5px;
   cursor: pointer;
 }
 
