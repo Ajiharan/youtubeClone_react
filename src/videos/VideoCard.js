@@ -11,9 +11,13 @@ const VideoCard = ({
 }) => {
   return (
     <div className="videoCard">
-      <img loading="lazy" alt={channel} src={channelImage} />
+      <img loading="lazy" alt={channel} src={image} />
       <div className="videoCard__info">
-        <Avatar src={image} className="videoCard__avatar" alt={channel} />
+        <Avatar
+          src={channelImage}
+          className="videoCard__avatar"
+          alt={channel}
+        />
         <div className="videoCard__text">
           <h4>{title}</h4>
           <p>{channel}</p>
